@@ -1,7 +1,30 @@
-## My Reports on HackerOne
+> A critical Insecure Direct Object Reference (IDOR) vulnerability exists in the password reset functionality of *.newegg.com, allowing attackers to reuse intercepted tokens (e.g., from Burp Suite history) to reset any user’s password without authorization. This leads to full account takeover (compromising confidentiality and integrity), full report:
+https://hackerone.com/reports/3125758
+Impact:
+The hacker can get full access to the account by using this token to reset password, you should after each request make a new token, the reality of the token being repeated in many requests means that the attacker can easily use it because the token is not disabled after each request, this is really dangerous because the token is reusable, allowing unauthorized password reset.
 
-- [Critical Insecure Password Reset Token Mechanism (IDOR) Leading to Account Takeover](https://hackerone.com/reports/3125758)
 
-- [High Missing HTTPS Protection During Account Creation Exposes User Credentials to Man-in-the-Middle Attacks](https://hackerone.com/reports/3137156)
+> A high vulnerability about Missing HTTPS Protection During Account Creation Exposes User Credentials that can lead to man-in-the-middle Attacks, full report:
+https://hackerone.com/reports/3137156
+Summary:
+The website uses unencrypted HTTP protocol during the account creation process, exposing sensitive user information including usernames, passwords, and personal details to potential interception by attackers on the same network:
+Customer Impact:
+Attackers could intercept and steal login credentials
+Personal information could be captured and used for identity theft
+Users could have their accounts compromised without their knowledge
+Business Impact:
+Loss of customer trust and reputation damage
+Potential regulatory compliance violations (GDPR, CCPA, etc.)
+Increased risk of data breaches and associated costs
+Potential legal liability for exposed customer data
 
-- [Insecure Direct Object Reference (IDOR) – Cart Quantity Manipulation](https://hackerone.com/reports/3287574)
+
+> An Insecure Direct Object Reference (IDOR) vulnerability in Cart Quantity Manipulation:
+https://hackerone.com/reports/3287574
+Summary:
+An IDOR vulnerability was identified in the shopping cart functionality, where the quantity parameter of a product can be manipulated by an unauthorized user. By intercepting and modifying the request to the cart endpoint, an attacker is able to change the number of items in their cart — including exceeding stock limits or altering the quantity of restricted items — without proper authorization or validation.
+Impact:
+This can lead to the following:
+- Abuse of inventory (e.g., adding more than allowed/available).
+- Circumvention of purchase limits (e.g., limited-edition or restricted items).
+- Potential price manipulation or checkout bypass if tied to business logic.

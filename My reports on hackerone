@@ -1,5 +1,7 @@
-https://hackerone.com/reports/3125758
+## My Reports on HackerOne
 
-https://hackerone.com/reports/3137156
+- [Critical Insecure Password Reset Token Mechanism (IDOR) Leading to Account Takeover](https://hackerone.com/reports/3125758)
 
-https://hackerone.com/reports/3287574
+- [High Missing HTTPS Protection During Account Creation Exposes User Credentials to Man-in-the-Middle Attacks](https://hackerone.com/reports/3137156)
+
+- [Insecure Direct Object Reference (IDOR) – Cart Quantity Manipulation](https://hackerone.com/reports/3287574)

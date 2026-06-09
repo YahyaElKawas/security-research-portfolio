@@ -20,6 +20,7 @@ This repository contains a collection of responsible disclosure reports, vulnera
 
 
 ## Skills and vulnerabilities 
+- Broken access control
 - IDOR
 - XSS
 - CSRF
@@ -27,7 +28,6 @@ This repository contains a collection of responsible disclosure reports, vulnera
 - Authorization bypass
 - Business logic vulnerabilities
 - API security
-- SSRF
 - File upload vulnerabilities
 - Information disclosure
 

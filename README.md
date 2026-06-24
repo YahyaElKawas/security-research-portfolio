@@ -10,6 +10,7 @@ This repository contains a collection of responsible disclosure reports, vulnera
 
 - [Insecure Direct Object Reference (IDOR) – Cart Quantity Manipulation](https://hackerone.com/reports/3287574)
 
+- I also solved 50+ labs in portswigger on (XSS, SQL Injection, CSRF, and Broken Access Control)
 
 ## The goal of this repository is to demonstrate:
 - Web application security expertise
